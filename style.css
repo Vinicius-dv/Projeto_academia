@@ -136,9 +136,8 @@ body,html{
 .button_mais{
   border: none;
   background-color: #D21428;
-  width: 150px;
-  height: 70px;
-  font-size: 1.1em;
+  width: 120px;
+  height: 50px;
   border-radius: 10px;
   transition: background-color 0.3s;
   margin-top: 20px;
