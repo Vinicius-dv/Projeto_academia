@@ -102,42 +102,84 @@ body,html{
 
 /* Parte da descriçao */
 
+.main {
+    display: flex;
+    justify-content: space-between; /* Ajusta o espaço entre os elementos */
+    align-items: center; /* Alinha verticalmente se necessário */
+    flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+    padding: 20px; 
+  }
+
 .div_desc{
-  height: 100%;
-  width: 50%;
+  width: 30%;
   margin: 0px 0px 0px 5%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
+  align-items: start;
+}
+.div_desc h1{
+    padding: 10px;
 }
 .p_desc{
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: 500;
   margin-bottom: 30px;
   margin-top: 20px;
+  padding: 10px;
 }
 .p_mais{
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: 500;
+  padding: 10px;
 }
 
 .button_mais{
   border: none;
   background-color: #D21428;
   width: 120px;
-<<<<<<< HEAD
-  height: 60px;
-  font-size: 1.1em;
-=======
   height: 50px;
->>>>>>> eeb5e3b45404ec0386557e9f37bd4e3d12e29ca9
   border-radius: 10px;
   transition: background-color 0.3s;
+  margin-top: 20px;
+  margin-left:10px;
 }
 .button_mais a{
   color: white;
 }
 .button_mais:hover{
   background-color: black;
+}
+
+.main_img{
+    width: 60%;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    margin-bottom: 20%;
+    margin-right: 5%;
+}
+
+/*Responsividade da descrição*/
+@media (max-width: 768px) {
+    .div_desc{
+        width: 100%;
+    }
+    .main_img{
+        display: none;
+    }
+    .button_mais{
+      width: 80px;
+      height: 30px;
+      margin-top: 0px;
+    }
+}
+
+@media (min-width:770px) and (max-width:1100px) {
+    .div_desc{
+        width: 100%;
+    }
+
+    .main_img{
+        display: none;
+    }
 }
