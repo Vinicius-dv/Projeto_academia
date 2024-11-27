@@ -126,8 +126,12 @@ body,html{
   border: none;
   background-color: #D21428;
   width: 120px;
+<<<<<<< HEAD
   height: 60px;
   font-size: 1.1em;
+=======
+  height: 50px;
+>>>>>>> eeb5e3b45404ec0386557e9f37bd4e3d12e29ca9
   border-radius: 10px;
   transition: background-color 0.3s;
 }
