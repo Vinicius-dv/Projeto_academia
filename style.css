@@ -20,8 +20,9 @@ body,html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 0px 100px 0px ;
-    padding: 20px 40px 0px 20px;
+    margin-bottom: 50px;
+    padding: 0px 40px 0px 20px;
+    margin-top: 0px;
     height: 110px;
     background-color: #151515;
     color: white;
@@ -104,10 +105,27 @@ body,html{
 
 .main {
     display: flex;
-    justify-content: space-between; /* Ajusta o espaço entre os elementos */
-    align-items: center; /* Alinha verticalmente se necessário */
-    flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     padding: 20px; 
+  }
+
+  .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
   }
 
 .div_desc{
@@ -168,8 +186,8 @@ body,html{
         display: none;
     }
     .button_mais{
-      width: 80px;
-      height: 30px;
+      width: 120px;
+      height: 60px;
       margin-top: 0px;
     }
 }
@@ -181,5 +199,136 @@ body,html{
 
     .main_img{
         display: none;
+    }
+}
+
+/*Estilos da section professores*/
+
+.nossos_prof{
+    margin: 20px 0px 30px 80px;
+}
+
+.prof_section_margin{
+    display: flex;
+    width: 100%;
+}
+.prof_section{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+}
+.div_img_prof{
+    margin-left: 80px;
+}
+
+.img_prof{
+    height: 410px;
+    width: 400px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.desc_prof{
+    width: 900px;
+    background-color: #151515cb;
+    color: white;
+    border-radius: 0px 20px 20px 0px;
+    height: 410px;
+    line-height: 40px;
+}
+
+.p_prof{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 30px;
+}
+.button_prof{
+    border: none;
+    background-color: #D21428;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 40px;
+    transition: background-color 0.3s;
+}
+
+.button_prof a{
+    color: white;
+  }
+.button_prof:hover{
+    background-color: black;
+  }
+
+/* Responsividade professores*/
+
+@media (max-width: 768px){
+    .nossos_prof{
+        font-size: 1.5em;
+        font-weight: 600;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        margin-top: 40px;
+    }
+    .prof_section_margin{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .prof_section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .div_img_prof{
+        margin-left: 0px;
+        width: 90%;
+    }
+    .img_prof{
+       width: 350px;
+       border-radius: 0px;
+    }
+    .desc_prof{
+        width: 350px;
+        height: 570px;
+        border-radius: 0px;
+    }
+}
+
+@media (min-width:770px) and (max-width:1100px) {
+    .nossos_prof{
+        margin-left: 60px;
+        font-size: 1.6em;
+        font-weight: 600;
+        margin-bottom: 10px;
+        margin-top: 40px;
+    }
+    .prof_section_margin{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .prof_section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .div_img_prof{
+        margin-left: 50px;
+        width: 90%;
+    }
+    .img_prof{
+       width: 700px;
+       border-radius: 0px;
+       height: 550px;
+    }
+    .desc_prof{
+        width: 700px;
+        height: 350px;
+        border-radius: 0px;
+        margin-left: 50px;
     }
 }
