@@ -137,17 +137,18 @@ body,html{
 }
 .div_desc h1{
     padding: 10px;
+    font-size: 1.7em;
 }
 .p_desc{
-  font-size: 1.4em;
-  font-weight: 500;
+  font-size: 1.5em;
+  font-weight: lighter;
   margin-bottom: 30px;
   margin-top: 20px;
   padding: 10px;
 }
 .p_mais{
-  font-size: 1.4em;
-  font-weight: 500;
+  font-size: 1.5em;
+  font-weight: lighter;
   padding: 10px;
 }
 
@@ -206,12 +207,14 @@ body,html{
 
 .nossos_prof{
     margin: 20px 0px 30px 80px;
+    font-weight: lighter;
 }
 
 .prof_section_margin{
     display: flex;
     width: 100%;
 }
+
 .prof_section{
     display: flex;
     width: 100%;
@@ -266,36 +269,35 @@ body,html{
 @media (max-width: 768px){
     .nossos_prof{
         font-size: 1.5em;
-        font-weight: 600;
-        margin-left: 20px;
+        font-weight: lighter;
+        margin-left: 10px;
         margin-bottom: 10px;
         margin-top: 40px;
     }
     .prof_section_margin{
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 100%;
     }
     .prof_section{
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         margin-top: 50px;
     }
     .div_img_prof{
-        margin-left: -5px;
-        width: 90%;
-        margin-bottom: -7px;
+        width: 100%;
+        margin: auto;
+        margin-bottom: -9px;
     }
     .img_prof{
-       width: 300px;
+       width: 320px;
        border-radius: 10px 10px 0px 0px;
     }
     .desc_prof{
-        width: 300px;
-        height: 570px;
+        width: 320px;
+        height: 710px;
         border-radius: 0px 0px 10px 10px;
-        margin-left: -5px;
     }
 }
 
@@ -303,7 +305,7 @@ body,html{
     .nossos_prof{
         margin-left: 60px;
         font-size: 1.6em;
-        font-weight: 600;
+        font-weight: lighter;
         margin-bottom: 10px;
         margin-top: 40px;
     }
@@ -321,6 +323,7 @@ body,html{
     .div_img_prof{
         margin-left: 50px;
         width: 90%;
+        margin-bottom: -9px;
     }
     .img_prof{
        width: 700px;
