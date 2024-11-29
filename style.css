@@ -274,26 +274,28 @@ body,html{
     .prof_section_margin{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
     }
     .prof_section{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         margin-top: 50px;
     }
     .div_img_prof{
-        margin-left: 0px;
+        margin-left: -5px;
         width: 90%;
+        margin-bottom: -7px;
     }
     .img_prof{
-       width: 350px;
-       border-radius: 0px;
+       width: 300px;
+       border-radius: 10px 10px 0px 0px;
     }
     .desc_prof{
-        width: 350px;
+        width: 300px;
         height: 570px;
-        border-radius: 0px;
+        border-radius: 0px 0px 10px 10px;
+        margin-left: -5px;
     }
 }
 
