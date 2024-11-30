@@ -31,7 +31,7 @@ app.post('/contato',(req,res)=>{
     const {nome,email,message} = req.body
 
     const mailOptions ={
-        from: `"${nome} <${email}>" <paulomaluko99@gmail.com>`,
+        from: `"<${email}>"  <paulomaluko99@gmail.com>`,
         to:'viniciushenrrique1830@gmail.com',
         replyTo: email,
         subject:'Novo contato - Formulario',
