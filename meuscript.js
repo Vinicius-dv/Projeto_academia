@@ -20,7 +20,7 @@ document.querySelector('.form_contato').addEventListener('submit',(e)=>{
         message:message
     }
 
-    fetch('https://projeto-academia.onrender.com/contato',{
+    fetch('http://localhost:3000/contato',{
         method:'POST',
         headers:{
             'Content-Type':'application/json'
