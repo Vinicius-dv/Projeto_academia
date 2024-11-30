@@ -1,11 +1,12 @@
 {
-  "name": "Projeto_academia",
-  "version": "1.0.0",
-  "description": "Backend básico para Vercel",
-  "main": "Sistema_contato.js",
-  "scripts": {
-    "start": "node Sistema_contato.js"
+  "engines":{
+    "node":"14.x"
   },
+
+  "scripts":{
+    "start": "node Sistema_contato"
+  },
+
   "dependencies": {
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",

@@ -1,0 +1,14 @@
+{
+    "version":2,
+    "builds":[
+        {
+            "src":"./Sistema_contato"
+        }
+    ],
+    "routes":[
+        {
+            "src":"/(.*)",
+            "dest":"/"
+        }
+    ]
+}
