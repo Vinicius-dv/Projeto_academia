@@ -25,8 +25,7 @@ document.querySelector('.form_contato').addEventListener('submit',(e)=>{
         headers:{
             'Content-Type':'application/json'
         },
-        body:JSON.stringify(dados),
-        mode: 'no-cors'
+        body:JSON.stringify(dados)
     })
     .then(res=> res.json())
     .then(data=>{
