@@ -39,9 +39,9 @@ app.post('/contato',(req,res)=>{
 
     transporter.sendMail(mailOptions,(error,info)=>{
         if (error) {
+            console.log(error);
             return res.status(500).json({ success: false, message: 'Erro ao enviar o e-mail.' });
         }
-
         res.status(200).json({ success: true, message: 'Mensagem enviada com sucesso!' });
     })
 })
