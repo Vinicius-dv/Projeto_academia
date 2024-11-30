@@ -7,7 +7,7 @@ const app = express()
 const port = process.env.PORT || 3000;
 
 const corsOptions = {
-    origin: 'https://projeto-academia-gamma.vercel.app',
+    origin: 'https://projeto-academia-h69djqurj-vinicius-dvs-projects.vercel.app/',
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type']
   };
