@@ -205,9 +205,22 @@ body,html{
 
 /*Estilos da section professores*/
 
+.parallax {
+    background-image: url('Imagens/parallax.jpg'); 
+    height: auto;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+    border-radius: 20px ;
+}
+
 .nossos_prof{
     margin: 20px 0px 30px 80px;
-    font-weight: lighter;
+    font-weight: 500;
+    text-align: center;
 }
 
 .prof_section_margin{
@@ -228,6 +241,10 @@ body,html{
     height: 410px;
     width: 400px;
     border-radius: 20px 0px 0px 20px;
+    transition: transform 0.2s ease;
+}
+.img_prof:hover{
+    transform: scale(1.05); 
 }
 
 .desc_prof{
@@ -365,6 +382,11 @@ body,html{
     height:600px ;
     margin-left: 5%;
     border-radius: 20px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.953);
+    transition: transform 0.2s ease;
+}
+#testimonials_chef:hover{
+    transform: scale(1.05); 
 }
 #testimonials_content{
     width: 50%;
@@ -375,7 +397,9 @@ body,html{
     justify-content: center;
 }
 #testimonials_content .section-subtitle{
- font-size: 2em;
+ font-size: 1.8em;
+ font-weight: 400;
+ color: #333; 
 }
 #feedbacks{
     display: flex;
@@ -413,9 +437,11 @@ body,html{
     #testimonials{
         flex-direction: column;
     }
+
     #testimonials_chef{
         display: none;
     }
+
     #testimonials_content{
         width: 70%;
         display: flex;
