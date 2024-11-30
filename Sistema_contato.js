@@ -18,9 +18,6 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json());
 
 
-console.log('User:', user);
-console.log('Password:', pass);
-
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
