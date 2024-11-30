@@ -18,6 +18,9 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json());
 
 
+console.log('User:', process.env.GMAIL_USER);
+console.log('Password:', process.env.GMAIL_PASS);
+
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -25,10 +28,6 @@ const transporter = nodemailer.createTransport({
         pass: process.env.GMAIL_PASS
     }
 });
-
-
-console.log('User:', process.env.GMAIL_USER);
-console.log('Password:', process.env.GMAIL_PASS);
 
 
 app.post('/contato',(req,res)=>{
