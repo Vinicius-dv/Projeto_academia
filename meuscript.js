@@ -30,10 +30,10 @@ document.querySelector('.form_contato').addEventListener('submit',(e)=>{
     .then(res=> res.json())
     .then(data=>{
         if (data.success) {
-            console.log('Mensagem enviada com sucesso');
+            console.log('Mensagem enviada com sucesso')
             document.querySelector('.form_contato').reset()
         } else {
-            console.log('Falha no envio da mensagem:', data.message);
+            console.log('Falha no envio da mensagem:', data.message)
         }
     })
     .catch(error => {
