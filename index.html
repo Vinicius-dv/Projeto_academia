@@ -54,6 +54,12 @@
     </header>
     
     <main class="main">
+
+        <a href="https://api.whatsapp.com/send?phone=SEUNUMERO&text=Olá,%20gostaria%20de%20mais%20informações!" 
+        target="_blank" 
+        class="whatsapp-button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    </a>
       
          <div class="div_desc">
          <h1>Quem somos ? </h1>
@@ -189,7 +195,7 @@
       <!--Aqui vai ficar o sistema de contato por email-->
      
   
-        <form class="form_contato" action="http://localhost:3000/contato" method="POST">
+        <form id="Contato" class="form_contato" action="http://localhost:3000/contato" method="POST">
             <label for="nome">Nome:</label>
             <input type="text" name="nome" id="nome" required>
 
