@@ -27,6 +27,10 @@ const transporter = nodemailer.createTransport({
 });
 
 
+console.log('User:', process.env.GMAIL_USER);
+console.log('Password:', process.env.GMAIL_PASS);
+
+
 app.post('/contato',(req,res)=>{
     const {nome,email,message} = req.body
 
