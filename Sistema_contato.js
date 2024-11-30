@@ -4,9 +4,15 @@ const bodyParser = require('body-parser')
 const cors = require('cors');
 
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000;
 
-app.use(cors());
+const corsOptions = {
+    origin: 'https://projeto-academia-gamma.vercel.app',
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type']
+  };
+  
+  app.use(cors(corsOptions));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
