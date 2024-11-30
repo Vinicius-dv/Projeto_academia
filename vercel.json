@@ -2,7 +2,8 @@
     "version":2,
     "builds":[
         {
-            "src":"./Sistema_contato"
+            "src":"./Sistema_contato",
+            "use": "@vercel/node"
         }
     ],
     "routes":[
