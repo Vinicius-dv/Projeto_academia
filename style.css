@@ -466,3 +466,59 @@ body,html{
         flex-direction: column;
     }
 }
+
+/*Estilos do sistema de contato*/
+
+.form_contato{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    width: 600px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form_contato label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+    align-self: flex-start;
+}
+
+
+.form_contato input,
+.form_contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+
+.form_contato button {
+    padding: 12px 20px;
+    background-color: #D21428;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form_contato button:hover {
+    background-color: #B21325;
+}
+
+
+.form_contato input:focus,
+.form_contato textarea:focus {
+    outline: none;
+    border-color: #D21428;
+}

@@ -186,6 +186,21 @@
             </div>
       </section>
 
+      <!--Aqui vai ficar o sistema de contato por email-->
+     
+  
+        <form class="form_contato" action="http://localhost:3000/contato" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+
+            <label for="message">Mensagem:</label>
+            <textarea name="message" id="message" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+            
     </main>
 
     <script src="meuscript.js"></script>
