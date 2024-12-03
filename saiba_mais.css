@@ -280,4 +280,7 @@ body,html{
     .div_horarios p{
         font-size: 1.1em;
     }
+    .horarios-container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
 }
