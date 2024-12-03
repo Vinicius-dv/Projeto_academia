@@ -167,15 +167,19 @@ body,html{
 }
 
 
-h1 {
+.div_horarios h1 {
     font-size: 2.8rem;
     color: #2c3e50;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+}
+.div_horarios p{
+    transition: transform 0.3s ease-in-out;
 }
 
-h2, h3 {
+.div_horarios h2, h3 {
     font-family: Arial, sans-serif;
     color: #333;
 }
@@ -209,10 +213,7 @@ h2, h3 {
     margin-right: 10px;
 }
 
-.div_horarios h1,
-.div_horarios p {
-    transition: transform 0.3s ease-in-out;
-}
+
 
 .div_horarios h1:hover,
 .div_horarios p:hover {
