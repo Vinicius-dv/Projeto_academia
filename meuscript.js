@@ -6,7 +6,6 @@ menu_hamburguer.addEventListener('click',()=>{
     mobileMenu.classList.toggle("active")
     mobileIcon.classList.toggle("fa-x")
 })
-
 document.querySelector('.form_contato').addEventListener('submit',(e)=>{
     e.preventDefault()
 

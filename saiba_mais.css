@@ -281,3 +281,131 @@ body,html{
         font-size: 1.1em;
     }
 }
+
+.h1_estrutura  {
+margin-top: 100px;
+margin-bottom: 10px;
+text-align: center;
+font-size: 1.7em;
+font-weight: lighter;
+}
+
+.imagens_academia{
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+overflow: hidden;
+width: 85%;
+margin: auto;
+}
+
+.img_container{
+display: flex;
+transition: transform 0.5s ease-in-out;
+}
+
+.img_container img{
+display: block;
+width: 100%;
+max-height: 600px;
+height: auto;
+flex-shrink: 0;
+border-radius: 10px;
+transition: filter 0.3s ease,opacity 0.5s ease,
+
+}
+
+
+
+.img_container img:hover{
+filter: brightness(0.9);
+}
+
+
+
+
+.button_img{
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background-color: #151515;
+color:white;
+border: none;
+padding: 10px 20px;
+font-size: 1.5em;
+cursor: pointer;
+z-index: 10;
+transition: background 0.6s;
+}
+
+#prev_btn{
+left: 0.1%;
+}
+
+.button_img:hover{
+background-color: #15151589;
+}
+
+#next_btn{
+right:0.1%;
+}
+.primeira{
+    transition: all 0.5s;
+    background: #fff;
+}
+
+
+/*Media Query fotos*/
+
+@media(max-width:768px){
+    .h1_estrutura{
+        margin-top: 40px;
+    }
+    #prev_btn{
+        left: 1%;
+        font-size: 0.8em;
+    }
+    #next_btn{
+        right: 1%;
+        font-size: 0.8em;
+    }
+    .div_fotos{
+        width: 100%;
+        top: 90%;
+        height: auto;
+    }
+}
+
+
+@media(min-width:770px) and (max-width:1100px) {
+    #prev_btn{
+        left: 1%;
+        font-size: 1.2em;
+    }
+    #next_btn{
+        right: 1%;
+        font-size: 1.2em;
+    }
+    .div_fotos{
+        width: 100%;
+        top: 94%;
+        height: auto;
+    }
+}
+
+@media (min-width: 1200px) and (max-width:1300px) {
+    #prev_btn{
+        left: 13%;
+        font-size: 1.5em;
+    }
+    #next_btn{
+        right: 13%;
+        font-size: 1.5em;
+    }
+    .div_fotos{
+        width: 74%;
+        top: 95%;
+        height: auto;
+    }
+}
