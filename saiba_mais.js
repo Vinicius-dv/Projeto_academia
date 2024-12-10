@@ -7,6 +7,7 @@ menu_hamburguer.addEventListener('click',()=>{
     mobileIcon.classList.toggle("fa-x")
 })
 
+/*Sistema de animação de deslize*/
 let index = 0 
 //aqui nessa função eu vou pegar a direção do botão
 function moverSlide(dir){
@@ -43,3 +44,21 @@ function moverSlide(dir){
     }
     })
 }
+
+
+/*Sistema de animação visivel e saindo*/
+const img_efeito = document.querySelectorAll('.img_container')
+
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('visivel')
+            entry.target.classList.remove('saindo')
+        }else{
+            entry.target.classList.add('saindo')
+            entry.target.classList.remove('visivel')
+        }
+    })
+},{threshold: 0.2})
+
+img_efeito.forEach((img)=> observer.observe(img))

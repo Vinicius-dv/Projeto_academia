@@ -312,11 +312,21 @@ max-height: 600px;
 height: auto;
 flex-shrink: 0;
 border-radius: 10px;
-transition: filter 0.3s ease,opacity 0.5s ease,
-
+transition: filter 0.3s ease,opacity 0.5s ease;
+transition: all 0.8s ease-in-out;
+transform: translateY(100px);
+opacity: 0;
 }
 
+.img_container.visivel img{
+    transform: translateY(0);
+    opacity: 1;
+}
 
+.img_container.saindo img{
+    transform: translateY(100px);
+    opacity: 0;
+}
 
 .img_container img:hover{
 filter: brightness(0.9);
