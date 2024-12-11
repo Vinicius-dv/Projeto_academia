@@ -32,13 +32,18 @@ function moverSlide(dir){
 
     //aqui eu fou um forEach para mostrar as imagens 
     img.forEach((i,Iindex)=>{
-        const divFotos = div_fotos[i]
+        const divFotos = div_fotos[Iindex]
+
+        i.classList.remove('saindo')
+        i.classList.add('visivel')
 
         if(divFotos){
         if(Iindex  === index){
-            img.style.opacity = 1
+            i.style.opacity = 1
             divFotos.style.display = 'block'
         }else{
+            i.classList.add('saindo')
+            i.style.opacity = 0
             divFotos.style.display = 'none'
         }
     }
@@ -47,9 +52,9 @@ function moverSlide(dir){
 
 
 /*Sistema de animação visivel e saindo*/
-const img_efeito = document.querySelectorAll('.img_container')
-
+const img_efeito = document.querySelectorAll('.img_container, .img_container img')
 const observer = new IntersectionObserver((entries)=>{
+    
     entries.forEach((entry)=>{
         if(entry.isIntersecting){
             entry.target.classList.add('visivel')

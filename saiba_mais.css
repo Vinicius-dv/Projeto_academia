@@ -303,6 +303,7 @@ margin: auto;
 .img_container{
 display: flex;
 transition: transform 0.5s ease-in-out;
+
 }
 
 .img_container img{
@@ -318,17 +319,17 @@ transform: translateY(100px);
 opacity: 0;
 }
 
-.img_container.visivel img{
+.img_container img.visivel{
     transform: translateY(0);
     opacity: 1;
 }
 
-.img_container.saindo img{
+.img_container img.saindo{
     transform: translateY(100px);
     opacity: 0;
 }
 
-.img_container img:hover{
+.fotos_academia img:hover{
 filter: brightness(0.9);
 }
 
