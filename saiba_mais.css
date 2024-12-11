@@ -375,16 +375,18 @@ right:0.1%;
     }
     #prev_btn{
         left: 1%;
-        font-size: 0.8em;
+        font-size: 0.5em;
     }
     #next_btn{
         right: 1%;
-        font-size: 0.8em;
+        font-size: 0.5em;
     }
-    .div_fotos{
+    .img_container{
         width: 100%;
-        top: 90%;
         height: auto;
+    }
+    .imagens_academia{
+        width: 95%;
     }
 }
 
@@ -398,9 +400,8 @@ right:0.1%;
         right: 1%;
         font-size: 1.2em;
     }
-    .div_fotos{
+    .img_container{
         width: 100%;
-        top: 94%;
         height: auto;
     }
 }
@@ -419,4 +420,181 @@ right:0.1%;
         top: 95%;
         height: auto;
     }
+}
+
+
+/*Estilos planos*/
+
+.div_planos {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items:stretch;
+    gap: 2%;
+    padding: 5% 2%;
+    background-color: #1111119b;
+    margin-top: 20%;
+  }
+  
+  .card_planos_bronze,
+  .card_planos_gold,
+  .card_planos_diamond {
+    flex: 1;
+    min-width: 30%;
+    padding: 5%;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #0c1c2bf9;
+    border: 2px solid #222;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.236);
+    color: #fff;
+    position: relative;
+  }
+  
+  .card_planos_bronze h1,
+  .card_planos_gold h1,
+  .card_planos_diamond h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .card_planos_bronze p,
+  .card_planos_gold p,
+  .card_planos_diamond p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+  
+  .card_planos_bronze {
+    background-color: #7c3f0e;
+    border-color: #c89b68;
+  }
+  
+  .card_planos_gold {
+    background-color: #b78c1b;
+    border-color: #f1c40f;
+  }
+  
+  .card_planos_diamond {
+    background-color: #1b83c1;
+    border-color: #5dade2;
+  }
+  
+  /* Botão para adesão */
+  .card_planos_bronze button,
+  .card_planos_gold button,
+  .card_planos_diamond button {
+    padding: 1em;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #ff2e2e;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .card_planos_bronze button a,
+  .card_planos_gold button a,
+  .card_planos_diamond button a {
+    color: white;
+  } 
+  
+  .card_planos_bronze button:hover,
+  .card_planos_gold button:hover,
+  .card_planos_diamond button:hover {
+    background-color: #d81b1b;
+  }
+
+  /*Media Footer*/
+  @media(max-width:768px){
+    .div_planos{
+        flex-direction: column;
+    }
+
+    .card_planos_bronze,
+    .card_planos_gold,
+    .card_planos_diamond{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  }
+
+
+  /*EStilos do footer*/
+.main_footer {
+    background-color: #1a1a1ad3;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 110px;
+}
+
+/* Seção da localização */
+.section_footer_loc {
+    width: 100%;
+    max-width: 800px;
+}
+
+.footer_left {
+    margin-bottom: 20px;
+}
+
+.footer_left h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-decoration-color: #D21428;
+}
+
+.footer_left p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.section_footer_loc iframe {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #333;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.section_footer_loc iframe:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.section_fim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer_right h3 {
+    font-size: 1.4rem;
+    color: white;
+}
+
+.footer_right a {
+    color: white;
+    font-size: 28px; 
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.footer_right a:hover {
+    transform: scale(1.2);
+    color: #f39c12;
 }
