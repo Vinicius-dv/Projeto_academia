@@ -30,7 +30,7 @@ function moverSlide(dir){
     const img_container = document.querySelector('.img_container')
     img_container.style.transform = `translateX(-${index * 100}%)`
 
-    //aqui eu fou um forEach para mostrar as imagens 
+    //aqui eu faço um forEach para mostrar as imagens 
     img.forEach((i,Iindex)=>{
         const divFotos = div_fotos[Iindex]
 
@@ -53,6 +53,7 @@ function moverSlide(dir){
 
 /*Sistema de animação visivel e saindo*/
 const img_efeito = document.querySelectorAll('.img_container, .img_container img')
+//Eu passo para o observer a img, ai quando a imagem for observada, aplica a classe visivel, se não aplica a saindo!
 const observer = new IntersectionObserver((entries)=>{
     
     entries.forEach((entry)=>{
@@ -66,4 +67,5 @@ const observer = new IntersectionObserver((entries)=>{
     })
 },{threshold: 0.2})
 
+//dou um forEach nas imagens, falo para ele observar as imagens!
 img_efeito.forEach((img)=> observer.observe(img))
