@@ -37,8 +37,8 @@ document.querySelector('.form_contato').addEventListener('submit',(e)=>{
     })
     .catch(error => {
         // Caso ocorra algum erro
-        alert('Erro ao enviar mensagem.');
-        console.error('Erro:', error);
+        alert('Erro ao enviar mensagem.')
+        console.error('Erro:', error)
     });
 })
 
@@ -46,7 +46,7 @@ document.querySelector('.form_contato').addEventListener('submit',(e)=>{
 /*Sistema de efeito aparecendo e saindo*/
 
 const img_efeito = document.querySelectorAll('.section_main')
-
+//Eu passo para o observer a img, ai quando a imagem for observada, aplica a classe visivel, se não aplica a saindo!
 const observer = new IntersectionObserver((entries)=>{
     entries.forEach((entry)=>{
         if(entry.isIntersecting){

@@ -217,6 +217,7 @@
 
         select.addEventListener('change', (event) => {
             const selectedValue = event.target.value;
+            console.log(event)
 
             cards.forEach((card) => {
                 const modalidade = card.getAttribute('data-modalidade');
