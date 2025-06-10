@@ -31,7 +31,7 @@ app.post('/contato',(req,res)=>{
     const {nome,email,message} = req.body
 
     const mailOptions ={
-        from: `"<${email}>"  <paulomaluko99@gmail.com>`,
+        from: `"<${email}>"`,
         to:'viniciushenrrique1830@gmail.com',
         replyTo: email,
         subject:'Novo contato - Formulario',
@@ -41,9 +41,9 @@ app.post('/contato',(req,res)=>{
     transporter.sendMail(mailOptions,(error,info)=>{
         if (error) {
             console.log(error);
-            return res.status(500).json({ success: false, message: 'Erro ao enviar o e-mail.' });
+            return res.status(500).json({ success: false, message: 'Erro ao enviar o e-mail.' })
         }
-        res.status(200).json({ success: true, message: 'Mensagem enviada com sucesso!' });
+        res.status(200).json({ success: true, message: 'Mensagem enviada com sucesso!' })
     })
 })
 
